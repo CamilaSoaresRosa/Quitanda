@@ -139,6 +139,7 @@ header{
 .produto {
     padding: 8vw;
     width: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
 
@@ -146,69 +147,31 @@ header{
         width: 100%;
         display: flex;
         justify-content: space-between;
-    }
 
-    .acai, .italiano, .espresso, .milkshake {
-        aspect-ratio: 9/14;
-        width: 100%;
-        max-width: 23%;
-        text-align: center;
-        color: #ffe2bb;
-        padding: 10px;
-        font-family: 'quitandinha';
-        letter-spacing: 3px;
-        font-size: 24px;
-    }
+        img {
+            max-width: 90%;
+        }
 
-    .produtos > :hover {
-        cursor: pointer;
-    }
+        .zoom{
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .zomm{
+            object-fit: cover;
+            transition: trasform 0.8s;
+            height: 100%;
+        }
 
-
-    .acai {
-        background-image: url(imagens/item-acai.webp);
-        background-position: center;
-        background-size: cover;
-        border-radius: 28px;
+        .zoom:hover{
+            transform: scale(1.2);
+        }
     }
-
-    .italiano {
-        background-image: url(imagens/item-sorvete.webp);
-        background-position: center;
-        background-size: cover;
-        border-radius: 28px;
-    }
-
-    .espresso {
-        background-image: url(imagens/item-acai.webp);
-        background-position: center;
-        background-size: cover;
-        border-radius: 28px;
-    }
-
-    .milkshake {
-        background-image: url(imagens/item-sorvete.webp);
-        background-position: center;
-        background-size: cover;
-        border-radius: 28px;
-    }
-    
-    p {
-    text-align: center;
-    padding-top: 3vw;
-}
 }
 
 .sobrequitanda {
     display: flex;
     padding:  8vw;
     justify-content: space-between;
-
-
-    /*.xu img {
-        max-width: 100%;
-        height: auto;
-    }*/
 
     .xu {
         width: 45%;
@@ -407,53 +370,6 @@ header{
     height: 100%;
     background: linear-gradient(180deg, rgba(12, 1, 2, 0.00) 0%, #ffe2bb 100%);
 }
-
-/*.sorvetes { teste sem dividir a section
-    padding: 8vw;
-    position: relative;
-
-    .ladoesq{
-        max-width: 30%;
-        padding-top: 8vw;
-        text-align: start;
-        display: flex;
-        flex-direction: column;
-        gap: 10vw;
-        position: absolute;
-
-        p {
-            max-width: 80%;
-            text-align: start;
-        }
-
-        h3{
-            font-size: 3vw;
-            font-family: quitandinha;
-            letter-spacing: 4px;
-        }
-
-    }
-
-    .ladodir{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-
-        img {
-            width: 70%;
-            height: auto;
-            display: block;
-        }
-    }
-
-    .sabo {
-        display: flex;
-        flex-direction: column;
-        z-index: 8;
-        color: #ff5757;
-    }
-}*/
-
 
 .sorvetes {
     background-image: url(imagens/sorvetao.webp);
